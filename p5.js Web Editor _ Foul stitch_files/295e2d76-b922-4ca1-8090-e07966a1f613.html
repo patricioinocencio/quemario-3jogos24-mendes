@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>
+    window.offs = [];
+    window.objectUrls = {"blob:https://preview.p5js.org/28a16dc4-ad2a-475e-924b-2b47f566941b":"/sketch.js"};
+    window.objectPaths = {"28a16dc4-ad2a-475e-924b-2b47f566941b":"sketch.js"};
+    window.editorOrigin = 'https://editor.p5js.org';
+  </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/p5.js" crossorigin=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/addons/p5.sound.min.js" crossorigin=""></script>
+    
+    
+  
+  <!--<base href="https://preview.p5js.org/patricioinocencio/sketches/S_rF43M_r/">--><base href="."><style>
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.game-board{
+  width: 80%;
+  height: 500px;
+  border: 1px solid #333;
+  margin: 0 auto;
+  position:relative;
+  overflow:hidden;
+  border-bottom: 15px solid rgb(35, 160, 35);
+  background: linear-gradient(#87ceeb, #e0f6ff);
+}
+.clouds{
+  width:450px;
+  position: absolute;
+  animation: clouds-animation 10s infinite linear;
+}
+.pipe{
+  position: absolute;
+  bottom: 0;
+  width:60px;
+  right: 100%;
+  animation:pipe-animation 1.5s infinite linear;
+}
+.mario{
+  width: 150px;
+  position: absolute;
+  bottom:0;
+ /*animation: jump 500ms infinite;*/
+}
+.jump{
+  animation: jump 700ms infinite
+}
+@keyframes pipe-animation{
+  from{
+    right:-80px;
+  }
+  to{
+    rigth: 100%;
+  }
+}
+@keyframes jump{
+  0%{
+    bottom:0;
+  }
+  40%{
+    bottom:180px;
+  }
+  
+  50%{
+    bottom:180px;
+  }
+   60%{
+    bottom:180px;
+  }
+  100%{
+    bottom:0;
+  }
+}
+
+@Keyframes clouds-animation{
+  from{
+    right:0;
+  }
+  to{
+    right:100%;
+  }
+}</style><script src="https://preview.p5js.org/previewScripts.21537acb172bb479879b.js" crossorigin=""></script></head>
+  <body>
+    <div class="game-board">
+      <img src="https://assets.editor.p5js.org/65649e01ba92fa001ae0e140/cff490a2-f16b-4d65-8ceb-9389f2706d44.png" class="clouds">
+      <img src="https://preview.p5js.org/patricioinocencio/sketches/S_rF43M_r/images/game-over.png" class="mario" style="animation: auto ease 0s 1 normal none running nome; bottom: 44px; width: 75px; margin-left: 50px;">
+      <img src="https://assets.editor.p5js.org/65649e01ba92fa001ae0e140/10581401-0fcb-4b51-9c48-4933ee629172.png" class="pipe" style="animation: auto ease 0s 1 normal none running none; left: 44px;">
+    </div>
+    <main>
+    </main>
+    <script src="blob:https://preview.p5js.org/28a16dc4-ad2a-475e-924b-2b47f566941b"></script>
+  
+
+</body></html>
